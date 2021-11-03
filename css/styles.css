@@ -1,0 +1,127 @@
+.bg-purple {
+  color: white!important;
+  background: linear-gradient(135deg, #37315e, rgb(64, 29, 186))!important;
+}
+
+.bg-pink {
+  border-color: #da4167!important;
+  background: linear-gradient(227deg, rgba(220, 92, 124, 1) 0%, rgba(218, 65, 103, 1) 100%)!important;
+  color: white!important;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  border-color: #ffffff !important;
+}
+
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+  padding-left: 250px;
+}
+
+#sidebar-wrapper {
+  position: fixed;
+  left: 250px;
+  z-index: 1000;
+  overflow-y: auto;
+  margin-left: -250px;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(135deg, #37315e, rgb(64, 29, 186))!important;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+}
+
+#page-content-wrapper {
+  padding: 15px;
+  width: 100%;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  list-style: none;
+}
+
+.nav-items a{
+  margin-bottom: 10px;
+}
+
+.icon{
+  margin-right: 10px;
+}
+
+.product-main{
+  margin-top: 53px;
+}
+
+.sidebar-link{
+  display: flex;
+  align-items: center;
+}
+
+footer{
+  background-color: rgb(240, 240, 240);
+  height: 4rem;
+}
+
+
+a[aria-expanded="true"] #right-icon-order{
+  transition: all 0.3s ease;
+  transform: rotate(90deg);
+ 
+}
+
+a[aria-expanded="false"] #right-icon-order{
+  transition: all 0.3s ease;
+  transform: rotate(0deg);
+}
+
+@media (min-width: 768px) {
+  #wrapper {
+      padding-left: 250px;
+  }
+
+  #wrapper.toggled {
+      padding-left: 0;
+  }
+
+  #sidebar-wrapper {
+      width: 250px;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+      width: 0;
+  }
+
+  #page-content-wrapper {
+      padding: 20px;
+  }
+
+  #wrapper.toggled #page-content-wrapper {
+      position: relative;
+      margin-right: 0;
+  }
+}
