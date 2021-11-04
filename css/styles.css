@@ -41,7 +41,7 @@
 }
 
 #wrapper.toggled #sidebar-wrapper {
-  width: 250px;
+  width: 100%;
 }
 
 #page-content-wrapper {
@@ -50,8 +50,11 @@
 }
 
 #wrapper.toggled #page-content-wrapper {
-  position: absolute;
-  margin-right: -250px;
+  display: none;
+}
+
+#wrapper.toggled footer {
+  display: none;
 }
 
 /* Sidebar Styles */
