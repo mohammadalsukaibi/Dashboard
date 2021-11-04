@@ -123,5 +123,6 @@ a[aria-expanded="false"] #right-icon-order{
   #wrapper.toggled #page-content-wrapper {
       position: relative;
       margin-right: 0;
+      display: block;
   }
 }
