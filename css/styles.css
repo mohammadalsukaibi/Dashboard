@@ -99,7 +99,24 @@ a[aria-expanded="false"] #right-icon-order{
   transform: rotate(0deg);
 }
 
+.myButton {
+	background-color:#c745b8;
+	border-radius:28px;
+	border:1px solid #c730c7;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+  border-radius: 20px; 
+  width: 100%;
+}
+
 @media (min-width: 768px) {
+
+  .myButton{
+    width: 20%;
+  }
   #wrapper {
       padding-left: 250px;
   }
