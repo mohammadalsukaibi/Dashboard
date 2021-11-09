@@ -131,6 +131,7 @@ function clickHandler(e){
 
     localStorage.setItem("test", JSON.stringify(productsg));
     target.parentElement.parentElement.parentElement.parentElement.remove();
+    alert("Product Deleted");
 
   }
 }
